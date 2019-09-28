@@ -66,11 +66,15 @@
         NSLog(@"%@",num);
     }
     NSLog(@"----------------------------------------------");
-    myIntegers = [NSMutableArray arrayWithArray:[myIntegers sortedArrayUsingSelector: @selector(compare:)]];
-    myIntegers = myIntegers.reverseObjectEnumerator;
+    
+    
+    NSSortDescriptor* sortOrder = [NSSortDescriptor sortDescriptorWithKey: @"self"
+                                                                ascending: NO];
+    
+    NSArray *arr = [myIntegers sortedArrayUsingDescriptors: [NSArray arrayWithObject: sortOrder]];
     
     NSLog(@"arrays sort descending");
-    for (NSNumber *num in myIntegers) {
+    for (NSNumber *num in arr) {
         NSLog(@"%@",num);
     }
     NSLog(@"----------------------------------------------");
