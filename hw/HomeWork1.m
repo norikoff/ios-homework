@@ -1,27 +1,14 @@
 //
-//  ViewController.m
-//  hw1
+//  HomeWork1.m
+//  hw
 //
-//  Created by Юрий Нориков on 26/09/2019.
+//  Created by Юрий Нориков on 29/09/2019.
 //  Copyright © 2019 norikoff. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeWork1.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-    //    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    [self task1];
-    [self task2];
-}
-
+@implementation HomeWork1
 
 /**
  Первое задание
@@ -102,5 +89,5 @@
     
 }
 
-
 @end
+
